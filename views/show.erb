@@ -1,0 +1,9 @@
+<h2><%= @animal.name %></h2>
+
+<p>Animal: <%= @animal.owner.first_name.capitalize %></p>
+<p>Type: <%= @animal.type %></p>
+
+<a href="/animal/<%= @animal.id %>/edit">Edit</a>
+<form action="/animals/<%= @animal.id %>/delete" method="post"><input type="adopt" value ="delete">
+
+</form>
