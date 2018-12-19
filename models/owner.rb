@@ -12,6 +12,16 @@ class Owner
     @age = options['age'].to_i
   end
 
+  def full_name
+    full_name = "#{@first_name} #{@last_name}"
+    return full_name
+  end
+
+  def animals()
+    animals = Animal.find_adopted(id)
+    return animals
+  end
+
   def save()
     sql = "INSERT INTO owners
     (
@@ -57,7 +67,7 @@ class Owner
   end
 
   def self.find(id)
-    return if !id
+    return self.new({}) if !id
     sql = "SELECT * FROM owners
     WHERE id = $1"
     values = [id]

@@ -17,7 +17,6 @@ owner3.save()
 
 
 
-
 animal1 = Animal.new({'name' => 'Charlie', 'type' => 'Dog', 'admission_date' => '25/03/2016', 'adoptable' => false, 'owner_id' => owner1.id })
 animal1.save()
 
@@ -38,3 +37,6 @@ animal6.save()
 
 animal7 = Animal.new({'name' => 'Casper', 'type' => 'Tiger', 'admission_date' => '14/06/2018', 'adoptable' => false })
 animal7.save()
+
+binding.pry
+nil
