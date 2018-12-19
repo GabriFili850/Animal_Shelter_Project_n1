@@ -6,13 +6,13 @@ require('pry-byebug')
 Animal.delete_all()
 Owner.delete_all()
 
-owner1 = Owner.new({'first_name' => 'John', 'last_name' => 'McAfee', 'age' => 73 })
+owner1 = Owner.new({'first_name' => 'Gerard', 'last_name' => 'Butler', 'age' => 48 })
 owner1.save()
 
-owner2 = Owner.new({'first_name' => 'Elon', 'last_name' => 'Musk', 'age' => 47 })
+owner2 = Owner.new({'first_name' => 'Dwayne', 'last_name' => 'Johnson', 'age' => 46 })
 owner2.save()
 
-owner3 = Owner.new({'first_name' => 'Holly', 'last_name' => 'Willoughby', 'age' => 37 })
+owner3 = Owner.new({'first_name' => 'Emma', 'last_name' => 'Stone', 'age' => 30 })
 owner3.save()
 
 
@@ -23,13 +23,13 @@ animal1.save()
 animal2 = Animal.new({'name' => 'Bella', 'type' => 'Dog', 'admission_date' => '14/07/2016', 'adoptable' => false, 'owner_id' => owner2.id })
 animal2.save()
 
-animal3 = Animal.new({'name' => 'Molly', 'type' => 'Cat', 'admission_date' => '01/08/2016', 'adoptable' => false, 'owner_id' => owner3.id })
+animal3 = Animal.new({'name' => 'Molly', 'type' => 'Dog', 'admission_date' => '01/08/2016', 'adoptable' => false, 'owner_id' => owner3.id })
 animal3.save()
 
 animal4 = Animal.new({'name' => 'Simba', 'type' => 'Dog', 'admission_date' => '08/09/2017', 'adoptable' => true })
 animal4.save()
 
-animal5 = Animal.new({'name' => 'Loki', 'type' => 'Dog', 'admission_date' => '12/01/2018', 'adoptable' => true })
+animal5 = Animal.new({'name' => 'Loki', 'type' => 'Cat', 'admission_date' => '12/01/2018', 'adoptable' => true })
 animal5.save()
 
 animal6 = Animal.new({'name' => 'Romeo', 'type' => 'Bear', 'admission_date' => '01/03/2018', 'adoptable' => false })

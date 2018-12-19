@@ -2,9 +2,11 @@
 <html
 <head>
   <title>Animal Shelter</title>
+  <h1 id="logo">Animal Shelter</h1>
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+
   <nav id="menu">
     <li class="menu-item"><a href='/animals'>Animals</a></li>
     <li class="menu-item"><a href='/animals/adoptable'>Adopt an animal</a></li>
@@ -12,8 +14,17 @@
     <li class="menu-item"><a href='/animals/unadoptable/training'>Still in training</a></li>
     <li class="menu-item"><a href='/owners'>Owners</a></li>
 
+  </nav>
+  <%= yield %>
+  <header>
+    <p class="page-description">something to say about the website</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="https://www.facebook.com"><b>facebook</b></a></li>
+      <li><a href="https://twitter.com">twitter</a></li>
+      <li><a href="https://www.instagram.com">instagram</a></li>
+    </ul>
     </nav>
-    <h1 id="logo">Animal Shelter</h1>
-    <%= yield %>
-  </body>
-  </html>
+</body>
+</html>

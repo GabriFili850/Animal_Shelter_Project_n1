@@ -1,8 +1,8 @@
 body {
   padding: 120px;
   font-size: 16px;
-  font-family: "Times New Roman", Times, serif;
-  color: blue;
+  font-family: 'Lato', sans-serif;
+  color: red;
   background-image: url("/images/background pet.jpg");
   background-position: center;
 }
@@ -12,7 +12,7 @@ a {
   font-size: 20px;
   text-decoration: none;
   text-align: center;
-  color: blue;
+  color: dimgrey;
 }
 
 a:hover {
@@ -31,7 +31,7 @@ a:hover {
 }
 
 img {
-  width: 50vw;
+  width: 25vw;
 }
 
 #logo {
@@ -51,7 +51,7 @@ img {
 
 table, th, td {
   border: 1px solid green;
-  background-color: grey;
+  background-color: white;
 }
 
 .form-el {
@@ -64,4 +64,22 @@ table, th, td {
   vertical-align: middle;
   width: 160px;
   margin: 0 1em 0 0;
+}
+
+nav {
+  background-color: #FFF;
+}
+
+nav li {
+  text-align: center;
+  margin: 0;
+  padding: 0 10px;
+  display: inline;
+}
+
+nav a {
+  height: 60px;
+  line-height: 60px;
+  color: #204156;
+  text-decoration: none;
 }
